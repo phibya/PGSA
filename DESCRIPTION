@@ -1,0 +1,29 @@
+Package: PGSA
+Title: Perturbation-Based Gene Set Analysis
+Version: 0.1.0
+Authors@R:
+    person("Phi", "Bya", , "pzb0047@auburn.edu", role = c("aut", "cre"))
+Description: The package implements the PGSA (Perturbation-based Gene Set Analysis)
+    algorithm which accounts for pathway co-regulation
+    and provides conservative statistical inference through iterative data perturbation,
+    K-means clustering, and regression-based p-value calibration.
+License: GPL-3
+Encoding: UTF-8
+Depends:
+    R (>= 3.5.0)
+Imports:
+    limma,
+    irlba,
+    matrixStats,
+    parallel,
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+URL: https://github.com/phibya/PGSA
+BugReports: https://github.com/phibya/PGSA/issues
+LazyData: true
